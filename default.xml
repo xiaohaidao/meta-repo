@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- see https://gerrit.googlesource.com/git-repo/+/HEAD/docs/manifest-format.md -->
+<manifest>
+    <remote name="url" fetch=".."/>
+    <remote name="github" fetch="https://github.com"/>
+    <remote name="yocto" fetch="git://git.yoctoproject.org/"/>
+
+    <default remote="github" revision="master"/>
+
+    <project name="xiaohaidao/meta-imx-bsp" path="meta-imx-bsp">
+        <linkfile src="script/source.sh" dest="source.sh"/>
+    </project>
+    <project name="poky" path="poky" remote="yocto" revision="yocto-5.0.2"/>
+
+</manifest>
+
